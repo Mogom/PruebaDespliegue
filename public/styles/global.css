@@ -1,0 +1,82 @@
+/* Imports */
+@import url("../styles/vars.css");
+
+/* Dynamic class */
+.text {
+    font-weight: bold;
+    font-size: var(--font-size);
+}
+.i-back{
+    position: fixed;
+    top: 5vh;
+    left: 4vw;
+    border: 2px solid var(--red);
+    border-radius: 50%;
+    z-index: 100;
+}
+.error {
+    position: absolute;
+    top: 100%;
+    color: var(--red);
+    font-size: var(--font-size);
+    margin-top: 5px;
+}
+.input{
+    padding: 12px;
+    width: 100%;
+    border: 1px solid var(--border-input);
+    border-radius: 5px;
+    font-size: var(--font-size);
+    transition: all 0.3s ease;
+}
+.input:focus {
+  box-shadow: 0 0 0 2px var(--border-focus-input);
+}
+/* Btns */
+.link{
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    color: var(--gris);
+    font-size: var(--font-size);
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+.link.active{
+    color: var(--azulturquesa);
+}
+.link::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    height: 2px;
+    width: 0;
+    left: 50%;
+    bottom: 0%;
+    background: var(--azulturquesa);
+    transition: all .3s ease-in-out;
+}
+.link:hover {
+    color: var(--azulturquesa);
+}
+.link:hover::before {
+    width: 100%;
+    left: 0;
+}
+.boton-enviar {
+    cursor: pointer;
+    padding: 12px 30px;
+    width: 100%;
+    color: var(--gris);
+    font-size: var(--font-size);
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    background: var(--background);
+    transition: all .3s ease-in-out;
+}
+.boton-enviar:hover {
+    background-color: var(--azulturquesa);
+    color: var(--white);
+    transform: translateY(-2px);
+}

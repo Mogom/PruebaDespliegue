@@ -1,0 +1,222 @@
+/* Estilos generales */
+main.login-container-m {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/leaves-pattern.png");
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+section.login-formulario-container-m {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Aumenté el ancho máximo para 2 columnas */
+}
+
+/* Logo */
+figure.contenedor-logo-externo-m {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.logo-veterinaria-m {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Encabezado */
+header.encabezado-formulario-m {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.titulo-formulario-m {
+    font-size: 24px;
+    font-weight: 700;
+    color: #00bcd4;
+    margin-bottom: 5px;
+}
+
+.subtitulo-formulario-m {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-top: 0;
+}
+
+/* Grid para campos del formulario */
+fieldset.contenido-paso-m {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Ajustes para campos específicos */
+.grupo-campo-m {
+    margin-bottom: 0; /* Eliminamos el margin-bottom porque gap lo maneja */
+}
+
+/* Campos que deben ocupar 2 columnas */
+.grupo-campo-completo {
+    grid-column: span 2;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #34495e;
+    font-size: 14px;
+}
+
+.obligatorio-m {
+    color: #e74c3c;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+input[type="file"] {
+    padding: 8px;
+    grid-column: span 2;
+}
+
+/* Errores */
+.campo-error-m {
+    border-color: #e74c3c !important;
+}
+
+.mensaje-error-m {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+    grid-column: span 2;
+}
+
+/* Vista previa de imagen */
+figure.imagen-preview-m {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    font-size: 13px;
+    grid-column: span 2;
+}
+
+.btn-eliminar-imagen-m {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-top: 8px;
+    transition: background-color 0.3s;
+}
+
+.btn-eliminar-imagen-m:hover {
+    background-color: #c0392b;
+}
+
+/* Botón de envío */
+.boton-login-m {
+    grid-column: span 2;
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: #00bcd4;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.boton-login-m:hover {
+    background-color: #00acc1;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 188, 212, 0.2);
+}
+
+.boton-login-m:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+/* Spinner */
+.spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #00bcd4;
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Fieldset y legend */
+legend.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    fieldset.contenido-paso-m {
+        grid-template-columns: 1fr;
+    }
+    
+    .grupo-campo-completo,
+    input[type="file"],
+    .imagen-preview-m,
+    .boton-login-m,
+    .mensaje-error-m {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 480px) {
+    section.login-formulario-container-m {
+        padding: 20px;
+    }
+    
+    .titulo-formulario-m {
+        font-size: 20px;
+    }
+}

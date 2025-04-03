@@ -1,0 +1,12 @@
+#Dep
+react
+react-dom
+react-hook-form
+boxicons
+
+#Dev Dep
+vite
+
+npm i react react-dom react-hook-form boxicons react-router lucide-react @supabase/supabase-js emailjs-com react-query
+npm i -D vite
+npm install next@latest

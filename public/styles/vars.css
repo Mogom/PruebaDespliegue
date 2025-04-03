@@ -1,0 +1,37 @@
+/* Fuente general */
+@import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+:root {
+    --white: #fff;
+    --black: #000000;
+    --background: #e9e9e9;
+    --azulclaro: #B2EBF2;
+    --azulturquesa : #00BCD4;
+    --verdeaguamarina : #0097A7;
+    --blanco: #fff;
+    --azul-claro: #b2ebf2;
+    --azul-turquesa: #00bcd4;
+    --verde-aguamarina: #0097a7;
+    --gris: #666;
+    --gray: #a1a1a1;
+    --red: #c20300;
+    --border-input: #c4c4c4;
+    --border-focus-input:#4a90e233;
+    --black-box: #00000025;
+    --font-size: 1.1rem;
+    --font-general: "Zain", sans-serif;
+    --notfoundimg: url("../imgs/notfound.jpg") center no-repeat;
+}
+html {
+    font-size: 16px;
+}
+@media (2500px < width) {
+    html {
+        font-size: 24px;
+    }
+}
+@media (3500px < width) {
+    html {
+        font-size: 32px;
+    }
+}

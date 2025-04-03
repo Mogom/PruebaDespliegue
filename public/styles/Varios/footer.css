@@ -1,0 +1,69 @@
+/* Estilos generales del footer */
+.footer {
+  background-color: white;
+  width: 100%;
+}
+
+.contenedor-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo y derechos */
+.logo-derechos {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.logo-footer {
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+}
+
+.texto-footer {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+/* Enlaces legales */
+.enlaces-legales {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.enlace-footer {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+}
+
+.enlace-footer:hover {
+  color: #06b6d4;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .contenedor-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-derechos,
+  .redes {
+    margin-bottom: 0;
+  }
+
+  .enlaces-legales {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+}

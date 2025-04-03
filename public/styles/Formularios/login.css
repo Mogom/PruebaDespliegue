@@ -1,0 +1,330 @@
+/* Contenedor principal */
+.login-container {
+    display: flex;
+    min-height: 90vh;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Sección izquierda - Formulario de login */
+  .login-formulario-container {
+    flex: 1;
+    background-color: #f5f5f5;
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/leaves-pattern.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  /* Logo externo-login al formulario */
+  .contenedor-logo-externo-login {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .logo-veterinaria-login {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  /* Contenedor del formulario */
+  .formulario-card-login {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 450px;
+    padding: 2rem;
+  }
+  
+  .contenido-formulario-login {
+    width: 100%;
+  }
+  
+  .encabezado-formulario-login {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .titulo-formulario-login {
+    color: #00bcd4;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitulo-formulario-login {
+    font-size: 0.875rem;
+    color: #757575;
+    margin-top: 0.5rem;
+  }
+  
+  /* Estilos del formulario */
+  .contenido-paso-login {
+    margin-bottom: 1.5rem;
+  }
+  
+  .grupo-campo-login {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  label {
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+    color: #424242;
+    font-weight: bold;
+  }
+  
+  .obligatorio-login {
+    color: #f44336;
+  }
+  
+  input {
+    padding: 0.75rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    transition: border-color 0.2s;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #00bcd4;
+    box-shadow: 0 0 0 2px rgba(0, 188, 212, 0.1);
+  }
+  
+  .campo-error-login {
+    border-color: #f44336;
+  }
+  
+  .mensaje-error-login {
+    color: #f44336;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+  }
+  
+  /* Estilos para el contenedor de contraseña */
+  .contenedor-input-password-login {
+    position: relative;
+  }
+  
+  .contenedor-input-password-login input {
+    padding-right: 2.5rem; /* Espacio para el icono del ojo */
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .boton-toggle-password-login {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #757575;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 0.5rem;
+  }
+  
+  .icono-ojo-login {
+    display: block;
+  }
+  
+  /* Botón de login */
+  .boton-login {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: #00bcd4;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .boton-login:hover {
+    background-color: #00acc1;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 188, 212, 0.2);
+  }
+  
+  /* Enlaces */
+  .enlaces-container-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .enlace-login {
+    color: #00bcd4;
+    text-decoration: none;
+    font-size: 0.875rem;
+  }
+  
+  .enlace-login:hover {
+    text-decoration: underline;
+  }
+  
+  /* Sección derecha - Imagen y cita */
+  .login-imagen-container {
+    flex: 1;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+  
+  .imagen-fondo-contenedor-login {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .imagen-fondo-login {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+  }
+  
+  .overlay-imagen-login {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .contenedor-cita-login {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    max-width: 80%;
+    margin-bottom: 15rem;
+    text-align: center;
+    margin-left: 5rem;
+  }
+  
+  .texto-cita-login {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  .subtexto-cita-login {
+    font-size: 0.875rem;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 992px) {
+    .formulario-card-login {
+      padding: 1.5rem;
+    }
+  
+    .texto-cita-login {
+      font-size: 1.5rem;
+    }
+  
+    .contenedor-cita-login {
+      margin-bottom: 10rem;
+    }
+  
+    .logo-veterinaria-login {
+      max-width: 180px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .login-container-login {
+      flex-direction: column-reverse;
+    }
+  
+    .login-imagen-container {
+      min-height: 250px;
+      max-height: 300px;
+    }
+  
+    .imagen-fondo-login {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .contenedor-cita-login {
+      margin-bottom: 2rem;
+      max-width: 90%;
+      padding: 1rem;
+    }
+  
+    .texto-cita-login {
+      font-size: 1.25rem;
+    }
+  
+    .formulario-card-login {
+      padding: 1.25rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-formulario-container {
+      padding: 1rem;
+    }
+  
+    .formulario-card-login {
+      padding: 1rem;
+    }
+  
+    .contenedor-logo-externo-login {
+      margin-bottom: 1rem;
+    }
+  
+    .logo-veterinaria-login {
+      max-width: 150px;
+    }
+  
+    .titulo-formulario-login {
+      font-size: 1.25rem;
+    }
+  
+    .login-imagen-container {
+      min-height: 200px;
+    }
+  
+    .contenedor-cita-login {
+      margin-bottom: 1rem;
+    }
+  
+    .texto-cita-login {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .formulario-card-login {
+      padding: 0.75rem;
+    }
+  }
+  
+  
