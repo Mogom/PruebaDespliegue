@@ -2,7 +2,7 @@
 import "../../public/styles/VeterinariaPage.css"
 import { NavBar } from "./BarrasNavegacion/NavBar"
 
-import { GetData } from "./Varios/Util"
+// import { GetData } from "./Varios/Util"
 import { diapositivas, promociones, testimonios } from './Varios/varios'
 import { Loader } from './Errores/Loader'
 import Footer from "./Varios/Footer2"
@@ -37,20 +37,20 @@ export default function VeterinariaPage() {
   }
 
   // Traer los servicios de la base de datos
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const services = await GetData(URL)
-        setSerData(services)
-        setLoading(false)
-      } catch (error) {
-        window.location.href = "/internal"
-        setSerData()
-      }
-    }
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const services = await GetData(URL)
+  //       setSerData(services)
+  //       setLoading(false)
+  //     } catch (error) {
+  //       window.location.href = "/internal"
+  //       setSerData()
+  //     }
+  //   }
   
-    fetchData()
-  }, [])
+  //   fetchData()
+  // }, [])
   
   // Efecto para inicializar y actualizar los grupos de testimonios
   useEffect(() => {
